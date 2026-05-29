@@ -1,0 +1,17 @@
+python \
+    -u train_sanch.py \
+    --model_name basic \
+    --index 0 \
+    --epoch 300 \
+    --d_model 16 \
+    --n_head 2 \
+    --dropout 0.2 \
+    --d_inner_hid 48 \
+    --batch_size 32 \
+    --alpha 0.8 \
+    --beta 0.0 \
+    --gamma 0.0 \
+    --lag 3 \
+    --pred_len 3 \
+    --pred_forward 3 \
+    --gpu_id 0
