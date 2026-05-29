@@ -60,19 +60,14 @@ dataset/sanch/
 
 ## Requirements
 
-```
-torch
-torchdiffeq
-numpy
-scipy
-matplotlib
-```
-
-Install:
+Create and activate the conda environment:
 
 ```bash
-pip install torch torchdiffeq numpy scipy matplotlib
+conda env create -f environment.yml
+conda activate lagformer
 ```
+
+Tested with Python 3.13, PyTorch 2.11.0, NumPy 2.3, SciPy 1.16. For GPU support, replace the `torch` pip entry with the appropriate CUDA wheel from [pytorch.org](https://pytorch.org/get-started/locally/).
 
 ## Usage
 
@@ -121,5 +116,3 @@ Checkpoints are saved to `checkpoints/` and logs to `logs/`.
 ## References
 
 Sanchez-Romero, R., & Cole, M. W. (2021). Estimating feedforward and feedback effective connections from fMRI time series: Assessments of statistical methods. *Network Neuroscience*, 5(2), 549–564.
-
-Dataset: OpenNeuro [ds000003](https://openneuro.org/datasets/ds000003/versions/00001)
